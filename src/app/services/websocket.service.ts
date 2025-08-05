@@ -21,7 +21,7 @@ export class WebSocketService {
   public error$ = this.errorSubject.asObservable();
   public results$ = this.resultsSubject.asObservable();
   constructor() {
-    this.socket = io('http://localhost:3000', {
+    this.socket = io('https://pocket-scrum-bk.onrender.com', {
       autoConnect: false,
       reconnection: true,
       reconnectionDelay: 1000,
